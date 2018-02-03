@@ -18,8 +18,9 @@ with open("/home/diksha/IIITD/sem4/capstone/final files/final_files/map_user_gen
         if i != 0:
             userName = line[0]
             corresponding_user_id = user_dictionary[userName]
-            lines = str(corresponding_user_id) + "  " + line[5] + "\n"
+            lines = str(corresponding_user_id) + "  " + line[5]
             myfile.write(lines)
+            myfile.write("\n")
 
         i = i + 1
 
